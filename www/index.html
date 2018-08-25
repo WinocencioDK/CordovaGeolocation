@@ -36,13 +36,14 @@
         <title>Hello World</title>
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+     <div class="app">
+        <div id="map">
+            <label>Latitude:</label> <label style="color: red" id=lat></label> <br>
+            <label>Longitude:</label> <label style="color: red" id=log></label> <br>
+            <button type="submit" onclick="getPosition()">ENVIAR</button>  
+            <br>                  
         </div>
+    </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </body>
